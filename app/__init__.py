@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import sys
 sys.path.insert(0, "../helper/")
-sys.path.insert(0, '/var/www/flaskapp/helper')
+sys.path.insert(0, '/var/www/Boaz_DE/helper')
 sys.path.insert(0, "../templates/")
 from db_helper import DB_HELPER
 import time
