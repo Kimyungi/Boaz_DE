@@ -17,7 +17,7 @@ class REALTIME:
             for i, j in zip(rank, trend):
                 data.append([i.get_text(), j.get_text()])
         else:
-            data = {}
+            data = []
             print("ERROR!!")
 
         return data
