@@ -1,0 +1,28 @@
+Wed Feb 24 15:48:01 UTC 2021 cron run
+Wed Feb 24 16:20:40 UTC 2021 cron run
+/var/www/flaskapp/daily_update.sh: line 3: /var/www/flaskapp/crawling.py: No such file or directory
+/var/www/flaskapp/daily_update.sh: line 4: /var/www/flaskapp/__init__.py: No such file or directory
+Wed Feb 24 16:30:01 UTC 2021 cron run
+/var/www/flaskapp/daily_update.sh: line 3: /var/www/flaskapp/helper/crawling.py: Permission denied
+/var/www/flaskapp/daily_update.sh: line 4: /var/www/flaskapp/app/__init__.py: Permission denied
+Wed Feb 24 16:33:01 UTC 2021 cron run
+/var/www/flaskapp/helper/crawling.py: line 1: import: command not found
+/var/www/flaskapp/helper/crawling.py: line 2: from: command not found
+/var/www/flaskapp/helper/crawling.py: line 3: from: command not found
+/var/www/flaskapp/helper/crawling.py: line 4: from: command not found
+/var/www/flaskapp/helper/crawling.py: line 6: class: command not found
+/var/www/flaskapp/helper/crawling.py: line 7: syntax error near unexpected token `('
+/var/www/flaskapp/helper/crawling.py: line 7: `    def __init__(self):'
+/var/www/flaskapp/app/__init__.py: line 1: from: command not found
+/var/www/flaskapp/app/__init__.py: line 2: import: command not found
+/var/www/flaskapp/app/__init__.py: line 3: syntax error near unexpected token `0,'
+/var/www/flaskapp/app/__init__.py: line 3: `sys.path.insert(0, "../helper/")'
+Wed Feb 24 16:35:01 UTC 2021 cron run
+/var/www/flaskapp/daily_update.sh: line 3: python3: command not found
+/var/www/flaskapp/daily_update.sh: line 4: python3: command not found
+Wed Feb 24 16:40:01 UTC 2021 cron run
+/var/www/flaskapp/daily_update.sh: line 4: $: command not found
+/var/www/flaskapp/daily_update.sh: line 5: $: command not found
+Wed Feb 24 16:43:01 UTC 2021 cron run
+/var/www/flaskapp/daily_update.sh: line 4: $: command not found
+/var/www/flaskapp/daily_update.sh: line 5: $: command not found

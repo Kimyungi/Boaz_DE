@@ -1,13 +1,11 @@
 import pymysql
-from crawling import REALTIME
 
 class DB_HELPER():
-    def __init__(self, host = '13.125.238.201', user = 'test', passwd = 'qkqhdi12', db = 'testdb'):
+    def __init__(self, host = '3.35.214.93', user = 'test', passwd = 'password', db = 'testdb'):
         self.host = host
         self.user = user
         self.passwd = passwd
         self.db = db
-        self.data = REALTIME()
 
     def read_tables(self, dbname='testdb', table_name = 'news'):
         connection = pymysql.connect(
@@ -25,7 +23,7 @@ class DB_HELPER():
 
         return result
     
-    def update_tables(self, dbname='testdb', table_name = 'news'):
+    def update_tables(self, dbname='testdb', table_name = 'news', data = []):
         connection = pymysql.connect(
                     host = self.host,
                     user = self.user,
@@ -38,7 +36,7 @@ class DB_HELPER():
         cursor.execute(sql)
 
         sql = "INSERT INTO news (rt_rank, trend) Values (%s, %s)"
-        val = [(int(key), value) for key, value in self.data()]
+        val = [(int(key), value) for key, value in data]
 
         cursor.executemany(sql, val)
 

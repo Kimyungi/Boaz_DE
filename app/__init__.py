@@ -16,13 +16,9 @@ def show():
         db.create_tables()
     except:
         pass
-    db.update_tables()
-    while 1:
-        min = now.tm_min
-        if min != min:
-            db.update_tables()
-        result = {}
-        for i in range(1, 21):
-            result[i] = db.read_tables()[i-1]['trend']
+    result = {}
+    for i in range(1, 11):
+        result[i] = db.read_tables()[i-1]['trend']
         
-        return render_template("index.html", result = result)
+    return render_template("index.html", result = result)
+
